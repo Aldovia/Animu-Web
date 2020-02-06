@@ -1,0 +1,21 @@
+nav {
+  display: flex;
+  position: absolute;
+  top: 32px;
+  z-index: 1;
+  width: 1336px;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: start;
+  align-items: center;
+  height: 0;
+
+  li {
+    margin-left: 32px;
+    list-style: none;
+  }
+
+  a.btn {
+    margin-left: auto;
+  }
+}

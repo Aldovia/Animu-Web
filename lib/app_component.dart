@@ -1,7 +1,9 @@
 import 'package:angular/angular.dart';
+import 'package:animu_web/src/site/pages/home/home_component.dart';
 
 @Component(
   selector: 'root',
-  template: '<h1>Great things are gonna happen!</h1>',
+  template: '<home></home>',
+  directives: [HomeComponent],
 )
 class AppComponent {}

@@ -1,0 +1,67 @@
+// Normalize
+@use './normalize.scss';
+
+// Global Styles
+body {
+  background: #121212;
+}
+
+.container {
+  max-width: 1368px;
+  margin: 0 auto;
+}
+
+// Text Styles
+h1 {
+  font: normal 60px 'Proza Libre';
+  color: #ffffff;
+}
+
+h4 {
+  font: normal 34px 'Proza Libre';
+  color: #ffffff;
+  opacity: 0.87;
+}
+
+h6.logo {
+  font: bold 24px 'Proza Libre';
+
+  a {
+    color: #ffffff;
+  }
+}
+
+.subtitle2 {
+  font: 600 14px 'Open Sans';
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.body1 {
+  font: normal 16px 'Open Sans';
+  color: #ffffff;
+  opacity: 0.6;
+  letter-spacing: 0.8px;
+  line-height: 24px;
+}
+
+.caption {
+  font: normal 12px 'Open Sans';
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+// Component Styles
+.btn {
+  background: #fc5c9c padding-box;
+  box-shadow: 0px 1px 3px #00000033;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 50px;
+}
+
+a.btn {
+  color: #ffffff;
+  text-transform: uppercase;
+  font: normal 14px 'Open Sans';
+}
