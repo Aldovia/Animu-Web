@@ -1,6 +1,7 @@
 import 'package:angular/angular.dart';
 import 'package:animu_web/src/site/pages/home/feature/feature.dart';
 import 'package:animu_web/src/site/partials/footer/footer_component.dart';
+import 'package:animu_web/src/site/partials/header/header.dart';
 import 'package:animu_web/src/site/partials/header/header_component.dart';
 import 'package:animu_web/src/site/pages/home/feature/feature_component.dart';
 
@@ -16,6 +17,12 @@ import 'package:animu_web/src/site/pages/home/feature/feature_component.dart';
   ],
 )
 class HomeComponent {
+  Header header = Header(
+    title: 'Take control of your Discord Server',
+    imageUrl: '/assets/img/discord-logo-black.svg',
+    headerSize: HeaderSize.large,
+  );
+
   List<Feature> features = [
     Feature(
       title: 'Make new members feel at home',

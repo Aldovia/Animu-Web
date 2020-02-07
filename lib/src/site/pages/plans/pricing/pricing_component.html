@@ -1,0 +1,12 @@
+<div [class.main]="pricing.isMain" class="pricing-box">
+  <div class="top card">
+    <i *ngIf="pricing.isMain" class="fas fa-crown"></i>
+    <h2>{{pricing.title}}</h2>
+  </div>
+  <div class="bottom card">
+    <h5>{{pricing.desc}}</h5>
+    <div class="price"><h1>${{pricing.price}}</h1> <h6>/ month</h6></div>
+    <a href="#/patreon" *ngIf="pricing.isAvailable" class="btn">Upgrade</a>
+    <a href="#" *ngIf="!pricing.isAvailable" class="btn">Coming Soon</a>
+  </div>
+</div>

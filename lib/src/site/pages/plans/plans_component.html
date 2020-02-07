@@ -1,1 +1,17 @@
-Plans here
+<header [header]="header"></header>
+
+<div class="container">
+  <h4 class="section-title">Unlock great new features & support Animu</h4>
+
+  <div class="pricing-boxes">
+    <pricing *ngFor="let pricing of pricings" [pricing]="pricing"></pricing>
+  </div>
+
+  <h1 class="section-title">Upgrade Perks</h1>
+
+  <div class="perks">
+    <perk *ngFor="let perk of perks" [perk]="perk"></perk>
+  </div>
+</div>
+
+<footer></footer>

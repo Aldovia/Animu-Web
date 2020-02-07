@@ -1,0 +1,16 @@
+h4 {
+  margin-bottom: 192px;
+}
+
+.pricing-boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.perks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 80px;
+}

@@ -1,0 +1,11 @@
+<div class="perk">
+  <i *ngIf="!perk.isFA" class="material-icons">{{perk.icon}}</i>
+  <i *ngIf="perk.isFA" class="fas" [ngClass]="iconClasses" [class]="perk.icon"></i>
+  <div class="info">
+    <div class="top">
+      <h5>{{perk.title}}</h5>
+      <p *ngIf="perk.isPlus" class="plus caption">Plus</p>
+    </div>
+    <p class="body1">{{perk.desc}}</p>
+  </div>
+</div>

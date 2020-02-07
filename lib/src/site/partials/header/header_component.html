@@ -1,5 +1,5 @@
 <navbar></navbar>
-<div class="header">
-  <div class="header-background"><img src="/assets/img/discord-logo-black.svg" alt="Header background"></div>
-  <h1>Take control of your Discord Server</h1>
+<div class="header" [class.large]="header.headerSize.index == 2" [class.medium]="header.headerSize.index == 1" [class.small]="header.headerSize.index == 0">
+  <div class="header-background"><img src="{{header.imageUrl}}" alt="Header background"></div>
+  <h1>{{header.title}}</h1>
 </div>

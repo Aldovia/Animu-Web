@@ -12,15 +12,51 @@ body {
 }
 
 // Text Styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+i,
+.subtitle2,
+.body1,
+.caption {
+  color: #ffffff;
+}
+
 h1 {
   font: normal 60px 'Proza Libre';
-  color: #ffffff;
+
+  &.section-title {
+    text-align: center;
+    margin-top: 160px;
+    margin-bottom: 80px;
+  }
+}
+
+h2 {
+  font: normal 48px 'Proza Libre';
 }
 
 h4 {
   font: normal 34px 'Proza Libre';
-  color: #ffffff;
   opacity: 0.87;
+
+  &.section-title {
+    margin-top: 128px;
+    margin-bottom: 128px;
+    text-align: center;
+  }
+}
+
+h5 {
+  font: normal 24px 'Proza Libre';
+}
+
+h6 {
+  font: normal 20px 'Proza Libre';
 }
 
 h6.logo {
@@ -33,21 +69,18 @@ h6.logo {
 
 .subtitle2 {
   font: 600 14px 'Open Sans';
-  color: #ffffff;
   opacity: 0.6;
 }
 
 .body1 {
   font: normal 16px 'Open Sans';
-  color: #ffffff;
   opacity: 0.6;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.3px;
   line-height: 24px;
 }
 
 .caption {
   font: normal 12px 'Open Sans';
-  color: #ffffff;
   opacity: 0.6;
 }
 
@@ -64,4 +97,9 @@ a.btn {
   color: #ffffff;
   text-transform: uppercase;
   font: normal 14px 'Open Sans';
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px #00000029;
 }
