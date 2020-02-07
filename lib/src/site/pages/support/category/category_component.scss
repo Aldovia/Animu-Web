@@ -1,0 +1,16 @@
+.category {
+  background: #ffffff0c;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  a.btn {
+    margin-bottom: 24px;
+  }
+
+  p {
+    text-align: center;
+  }
+}

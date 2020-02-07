@@ -19,7 +19,6 @@ h4,
 h5,
 h6,
 p,
-i,
 .subtitle2,
 .body1,
 .caption {
@@ -82,6 +81,11 @@ h6.logo {
 .caption {
   font: normal 12px 'Open Sans';
   opacity: 0.6;
+}
+
+input {
+  font: normal 16px 'Open Sans';
+  letter-spacing: 0.3px;
 }
 
 // Component Styles

@@ -1,0 +1,15 @@
+@use '../../../partials/mixins';
+
+.popular-articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+
+  @include mixins.grid-center-last(3);
+}
