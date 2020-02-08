@@ -1,0 +1,15 @@
+<header [header]="header"></header>
+<div class="container">
+  <h4 class="section-title">Browse through more than 250 Commands</h4>
+
+  <div class="wrapper">
+    <div class="commands-nav">
+      <command-category [selectedCommand]="selectedCommand" *ngFor="let category of categories" [category]="category" (viewCommandRequest)="viewCommand($event)"></command-category>
+    </div>
+
+    <div class="card" *ngIf="selectedCommand == null" ><p class="body1">Select a command to view info</p></div>
+    <command-view *ngIf="selectedCommand != null" [command]="selectedCommand"></command-view>
+  </div>
+</div>
+
+<footer></footer>

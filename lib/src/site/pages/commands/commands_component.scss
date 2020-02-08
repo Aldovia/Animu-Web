@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .card {
+    padding: 32px;
+  }
+
+  command-view, .card {
+    flex: 1;
+    margin-left: 80px;
+  }
+}

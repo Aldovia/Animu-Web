@@ -3,8 +3,8 @@
   <div class="header-background"><img [class.rotate]="header.rotate" src="{{header.imageUrl}}" alt="Header background"></div>
   <div class="hero">
     <h1>{{header.title}}</h1>
-    <div class="input-wrapper">
-      <input type="text" placeholder="Search for Articles" />
+    <div class="input-wrapper" *ngIf="header.showSearch">
+      <input type="text" placeholder="{{header.searchText}}" />
       <i class="material-icons">search</i>
     </div>
   </div>

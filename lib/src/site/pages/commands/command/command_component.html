@@ -1,0 +1,29 @@
+<div class="card main">
+  <h2>{{command.name[0].toUpperCase() + command.name.replaceAll('-', ' ').substring(1)}}</h2>
+  
+  <p class="body1 description">{{command.description}}</p>
+
+  <div class="aliases">
+    <p class="subtitle1">Aliases:</p>
+    <p *ngIf="command.aliases.length > 0" class="body1">{{command.aliases.join(', ')}}</p>
+    <p *ngIf="command.aliases.length == 0" class="body1">none</p>
+  </div>
+
+  <div class="usage">
+    <p class="subtitle1">Usage:</p>
+    <div class="card">
+      <p class="body1">-{{command.usageString}}</p>
+    </div>
+  </div>
+  
+  <div class="extended-help">
+    <p class="subtitle1">Extended Help:</p>
+
+    <!--
+      Extended Help Parsing Syntax
+      ============================
+      -> '-' is replaced with '•'
+    -->
+    <p class="body1">{{command.extendedHelp.replaceAll('-', '•')}}</p>
+  </div>
+</div>

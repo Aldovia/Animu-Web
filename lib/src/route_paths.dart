@@ -4,4 +4,5 @@ class RoutePaths {
   static final home = RoutePath(path: 'home');
   static final plans = RoutePath(path: 'plans');
   static final support = RoutePath(path: 'support');
+  static final commands = RoutePath(path: 'commands');
 }

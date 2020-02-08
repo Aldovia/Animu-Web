@@ -66,6 +66,11 @@ h6.logo {
   }
 }
 
+.subtitle1 {
+  font: 600 16px 'Open Sans';
+  opacity: 0.87;
+}
+
 .subtitle2 {
   font: 600 14px 'Open Sans';
   opacity: 0.6;
@@ -105,5 +110,6 @@ a.btn {
 
 .card {
   border-radius: 10px;
+  background: #ffffff0c;
   box-shadow: 0px 3px 6px #00000029;
 }

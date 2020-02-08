@@ -1,0 +1,38 @@
+.main {
+  padding: 32px;
+
+  .description {
+    margin-top: 16px;
+  }
+
+  .aliases {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+
+    .body1 {
+      margin-left: 8px;
+    }
+  }
+
+  .usage {
+    margin-top: 16px;
+
+    .card {
+      margin-top: 16px;
+      padding: 16px;
+      background: #0c0c0c;
+    }
+  }
+
+  .extended-help {
+    margin-top: 24px;
+
+    .body1 {
+      margin-top: 16px;
+      white-space: pre-line;
+    }
+  }
+}

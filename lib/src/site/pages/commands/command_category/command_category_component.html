@@ -1,0 +1,9 @@
+<div class="category">
+  <div class="title" (click)="toggle()">
+    <i class="fas fa-chevron-right" *ngIf="!expand"></i><i class="fas fa-chevron-down" *ngIf="expand"></i><h5>{{category.name}}</h5>
+  </div>
+
+  <div class="list" *ngIf="expand">
+    <li *ngFor="let command of category.commands" (click)="view(command)"><p class="body1" [class.selected]="command == selectedCommand">{{command.name}}</p></li>
+  </div>
+</div>

@@ -6,6 +6,8 @@ import 'package:animu_web/src/site/pages/plans/plans_component.template.dart'
     as plans_template;
 import 'package:animu_web/src/site/pages/support/support_component.template.dart'
     as support_template;
+import 'package:animu_web/src/site/pages/commands/commands_component.template.dart'
+    as commands_template;
 
 export 'route_paths.dart';
 
@@ -26,9 +28,15 @@ class Routes {
     component: support_template.SupportComponentNgFactory,
   );
 
+  static final commands = RouteDefinition(
+    routePath: RoutePaths.commands,
+    component: commands_template.CommandsComponentNgFactory,
+  );
+
   static final all = <RouteDefinition>[
     home,
     plans,
     support,
+    commands,
   ];
 }
