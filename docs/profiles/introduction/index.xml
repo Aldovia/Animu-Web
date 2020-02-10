@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction to Profiles on Animu | Help Center</title>
-    <link>https://animu.aldovia.moe/profiles/introduction/</link>
+    <link>https://help.animu.aldovia.moe/profiles/introduction/</link>
     <description>Recent content in Introduction to Profiles on Animu | Help Center</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2020 [Animu](https://animu.aldovia.moe/). All rights reserved</copyright>
     <lastBuildDate>Sun, 05 Jan 2020 10:42:26 +0600</lastBuildDate>
     
-	<atom:link href="https://animu.aldovia.moe/profiles/introduction/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://help.animu.aldovia.moe/profiles/introduction/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

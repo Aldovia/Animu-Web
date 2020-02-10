@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 # provide your domain here
-baseURL = "https://animu.aldovia.moe/"
+baseURL = "https://help.animu.aldovia.moe/"
 # theme
 theme = "dot"
 # site title
