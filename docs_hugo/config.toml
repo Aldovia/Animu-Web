@@ -7,6 +7,7 @@ theme = "dot"
 title = "Animu | Help Center"
 # desable language
 disableLanguages = []
+publishDir = "../docs"
 
 ############################# Default Parameters ##########################
 [params]
