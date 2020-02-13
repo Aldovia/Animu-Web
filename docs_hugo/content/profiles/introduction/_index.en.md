@@ -2,7 +2,7 @@
 title: "Introduction to Profiles"
 lastmod: 2020-01-05T10:42:26+06:00
 lastmod: 2020-01-05T10:42:26+06:00
-weight: 3
+weight: 1
 draft: false
 ---
 
