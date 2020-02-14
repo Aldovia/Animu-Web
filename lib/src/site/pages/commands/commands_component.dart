@@ -26,7 +26,7 @@ class CommandsComponent implements OnInit {
     headerSize: HeaderSize.small,
     rotate: false,
     showSearch: true,
-    searchText: "Search for Commands",
+    searchType: SearchType.commands,
   );
 
   List<Command> commands;

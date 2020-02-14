@@ -51,6 +51,11 @@ class Command {
 
     return commands;
   }
+
+  static fetchByName(String name) {
+    List<Command> commands = fetchAllCommands();
+    return commands.firstWhere((Command command) => command.name == name);
+  }
 }
 
 final String commandsString = r'''{

@@ -7,6 +7,7 @@ environment:
 
 dependencies:
   angular: ^5.3.1
+  autotrie: ^0.1.2
   angular_components: ^0.13.0+1
   angular_router: ^2.0.0-alpha
   markdown: ^2.1.3

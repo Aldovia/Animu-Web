@@ -1,4 +1,5 @@
 enum HeaderSize { small, medium, large }
+enum SearchType { commands, none }
 
 class Header {
   final String title;
@@ -6,13 +7,14 @@ class Header {
   final HeaderSize headerSize;
   final bool rotate;
   final bool showSearch;
-  final String searchText;
+  final SearchType searchType;
 
-  Header(
-      {this.title,
-      this.imageUrl,
-      this.headerSize,
-      this.rotate = true,
-      this.showSearch = false,
-      this.searchText = ''});
+  Header({
+    this.title,
+    this.imageUrl,
+    this.headerSize,
+    this.rotate = true,
+    this.showSearch = false,
+    this.searchType = SearchType.none,
+  });
 }

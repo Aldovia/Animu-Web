@@ -10,6 +10,10 @@
     justify-content: start;
     margin-top: 16px;
 
+    &:hover {
+      cursor: pointer;
+    }
+
     i {
       color: #ffffff;
       font-size: 16px;
@@ -25,6 +29,13 @@
 
     li {
       list-style: none;
+
+      p {
+        &:hover {
+          cursor: pointer;
+          opacity: 0.87;
+        }
+      }
 
       .selected {
         opacity: 0.87;
