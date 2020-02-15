@@ -89,3 +89,12 @@
     }
   }
 }
+
+@include mixins.sm {
+  .mobile-nav-sidebar {
+    position: absolute;
+    width: 192px;
+    padding-top: 24px;
+    padding-left: 24px;
+  }
+}
