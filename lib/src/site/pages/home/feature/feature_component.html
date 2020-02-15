@@ -8,3 +8,13 @@
   </div>
   <img src="{{feature.imageUrl}}" *ngIf="!feature.alternate" alt="Feature Image">
 </div>
+
+<div class="feature-mobile">
+  <img src="{{feature.imageUrl}}" alt="Feature Image">
+  <div class="details">
+    <h4>{{feature.title}}</h4>
+    <p class="body1">
+      {{feature.description}}
+    </p>
+  </div>
+</div>

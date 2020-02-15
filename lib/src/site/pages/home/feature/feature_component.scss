@@ -1,3 +1,5 @@
+@use '../../../../partials/mixins';
+
 .feature {
   margin-top: 256px;
   display: flex;
@@ -6,5 +8,45 @@
 
   .details {
     max-width: 600px;
+  }
+}
+
+.feature-mobile {
+  display: none;
+}
+
+@include mixins.xl {
+  .feature {
+    img {
+      max-width: 500px;
+    }
+
+    .details {
+      max-width: 450px;
+    }
+  }
+}
+
+@include mixins.lg {
+  .feature {
+    display: none;
+  }
+
+  .feature-mobile {
+    margin-top: 256px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      max-width: 80%;
+      margin-bottom: 32px;
+    }
+
+    .details {
+      max-width: none;
+      text-align: center;
+    }
   }
 }
