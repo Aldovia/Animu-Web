@@ -11,7 +11,9 @@
 <nav class="mobile-nav">
   <i class="material-icons" (click)="toggleSideBar()">menu</i>
   <h6 class="logo"><a href="#">ANIMU</a></h6>
-  <a href="#/login" class="btn">Login</a>
+  <div class="nav-btn-wrapper">
+    <a href="#/login" class="btn">Login</a>
+  </div>
 </nav>
 
 <div class="mobile-nav-sidebar-bg" *ngIf="showSidebar" (click)="showSidebar = false">

@@ -75,6 +75,17 @@
     i {
       color: #fff;
       cursor: pointer;
+      flex-basis: 33.3%;
+    }
+
+    h6.logo {
+      flex-basis: 33.3%;
+      text-align: center;
+    }
+
+    .nav-btn-wrapper {
+      flex-basis: 33.3%;
+      text-align: right;
     }
   }
 }
