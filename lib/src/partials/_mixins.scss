@@ -1,17 +1,56 @@
-@mixin grid-center-last($columns) {
-  $total_columns: $columns * 2;
-  $span: $total_columns / $columns;
-  $offset: $columns - 1;
-  $nth-child: if($columns % 2 == 0, 'odd', 'even');
+// Medium Desktops
+$screen-xl-min: 1366px;
 
-  display: grid;
-  grid-template-columns: repeat($total_columns, 1fr);
+// Tablets & Small Desktops
+$screen-lg-min: 980px;
 
-  & > * {
-    grid-column: span $span;
+// Medium Tablets
+$screen-md-min: 768px;
 
-    &:nth-last-child(#{$offset}):nth-child(#{$nth-child}) {
-      grid-column: $span / span $span;
-    }
+// Large Phones & Small Tablets
+$screen-sm-min: 640px;
+
+// Phones
+$screen-xsm-min: 400px;
+
+// Extra large devices
+@mixin xl {
+  @media (max-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+// large devices
+@mixin lg {
+  @media (max-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (max-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Small devices
+@mixin sm {
+  @media (max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Extra Small devices
+@mixin xsm {
+  @media (max-width: #{$screen-xsm-min}) {
+    @content;
+  }
+}
+
+// Custom devices
+@mixin rwd($screen) {
+  @media (min-width: $screen+'px') {
+    @content;
   }
 }

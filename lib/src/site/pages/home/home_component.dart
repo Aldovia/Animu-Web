@@ -21,6 +21,7 @@ class HomeComponent {
     title: 'Take control of your Discord Server',
     imageUrl: '/assets/img/discord-logo-black.svg',
     headerSize: HeaderSize.large,
+    showInviteBtn: true,
   );
 
   List<Feature> features = [

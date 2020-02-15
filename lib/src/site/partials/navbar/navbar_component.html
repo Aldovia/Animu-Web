@@ -1,9 +1,27 @@
-<nav>
+<nav class="desktop-nav">
   <h6 class="logo"><a href="#">ANIMU</a></h6>
   <li><a href="#/plans" class="subtitle2">Plans</a></li>
-  <li><a href="#/support" class="subtitle2">Support</a></li>
   <li><a href="#/commands" class="subtitle2">Commands</a></li>
+  <li><a href="https://help.animu.aldovia.moe" class="subtitle2">Help Center</a></li>
   <li><a href="#/join" class="subtitle2">Join Discord Server</a></li>
   <li><a href="#/invite" class="subtitle2">Add to Server</a></li>
   <a href="#/login" class="btn">Login</a>
 </nav>
+
+<nav class="mobile-nav">
+  <i class="material-icons" (click)="toggleSideBar()">menu</i>
+  <h6 class="logo"><a href="#">ANIMU</a></h6>
+  <a href="#/login" class="btn">Login</a>
+</nav>
+
+<div class="mobile-nav-sidebar-bg" *ngIf="showSidebar" (click)="showSidebar = false">
+
+</div>
+
+<div class="mobile-nav-sidebar" *ngIf="showSidebar">
+  <li><a href="#/plans" class="subtitle2">Plans</a></li>
+  <li><a href="#/commands" class="subtitle2">Commands</a></li>
+  <li><a href="https://help.animu.aldovia.moe" class="subtitle2">Help Center</a></li>
+  <li><a href="#/join" class="subtitle2">Join Discord Server</a></li>
+  <li><a href="#/invite" class="subtitle2">Add to Server</a></li>
+</div>

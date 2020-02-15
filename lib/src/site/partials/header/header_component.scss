@@ -66,6 +66,11 @@
     align-items: center;
     justify-content: center;
 
+    .btn {
+      margin-top: 16px;
+      z-index: 1;
+    }
+
     .input-wrapper {
       margin-top: 16px;
       position: relative;

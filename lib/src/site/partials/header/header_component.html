@@ -9,6 +9,7 @@
       <input type="text" placeholder="{{searchString}}" (keyup)="onInput($event)" />
       <i class="material-icons">search</i>
     </div>
+    <a href="#" class="btn" *ngIf="header.showInviteBtn">Add to Server</a>
     <div class="suggestions card" *ngIf="showSuggestions">
       <li *ngFor="let suggestion of suggestions" (click)="view(suggestion)">
         <p class=" body1">{{suggestion}}</p>
