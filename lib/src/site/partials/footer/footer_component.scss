@@ -1,3 +1,5 @@
+@use '../../../partials/mixins';
+
 .footer {
   margin-bottom: -128px;
   margin-top: 256px;
@@ -26,7 +28,6 @@
   .footer-content {
     height: 100%;
     margin: 0 auto;
-    max-width: 1336px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,6 +56,40 @@
 
       h4 {
         margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+@include mixins.lg {
+  .footer {
+    height: 600px;
+    padding-bottom: 32px;
+
+    .footer-background {
+      right: 0;
+      bottom: 0;
+      width: 600px;
+      height: 600px;
+      clip-path: none;
+
+      img {
+        position: absolute;
+        bottom: -30%;
+        transform: matrix(0.86, -0.52, 0.52, 0.86, 0, 0);
+      }
+    }
+
+    .footer-content {
+      flex-direction: column;
+      align-items: normal;
+
+      .logo-copyright {
+        margin-bottom: 32px;
+      }
+
+      .links {
+        margin-bottom: 64px;
       }
     }
   }
