@@ -1,3 +1,5 @@
+@use '../../../../partials/mixins';
+
 .pricing-box {
   position: relative;
 
@@ -44,6 +46,7 @@
 
     h5 {
       margin-top: 160px;
+      text-align: center;
     }
 
     .price {
@@ -60,6 +63,49 @@
 
     a.btn {
       margin-bottom: 48px;
+    }
+  }
+}
+
+@include mixins.xl {
+  .pricing-box {
+    h2 {
+      font-size: 32px;
+    }
+
+    &.main {
+      .top {
+        width: 100%;
+      }
+
+      .bottom {
+        width: 100%;
+        height: 480px;
+      }
+    }
+
+    .top {
+      width: 100%;
+      height: 96px;
+
+      i {
+        font-size: 32px;
+        margin-right: 16px;
+      }
+    }
+
+    .bottom {
+      margin-top: -64px;
+      height: 424px;
+      width: 100%;
+
+      h5 {
+        margin-top: 160px;
+      }
+
+      a.btn {
+        margin-bottom: 48px;
+      }
     }
   }
 }
