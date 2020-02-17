@@ -1,8 +1,9 @@
+@use '../../../../partials/mixins';
+
 .perk {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
 
   i {
     font-size: 64px;
@@ -15,6 +16,7 @@
     align-items: flex-start;
     justify-content: stretch;
     margin-left: 16px;
+    width: 100%;
 
     .top {
       display: flex;
@@ -33,5 +35,11 @@
     p {
       margin-top: 8px;
     }
+  }
+}
+
+@include mixins.md {
+  .perk i {
+    font-size: 40px;
   }
 }
