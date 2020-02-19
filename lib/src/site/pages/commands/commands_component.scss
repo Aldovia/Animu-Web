@@ -1,15 +1,36 @@
+@use '../../../partials/mixins';
+
 .wrapper {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  position: relative;
 
   .card {
     padding: 32px;
   }
 
-  command-view, .card {
+  command-view,
+  .card {
     flex: 1;
     margin-left: 80px;
+  }
+}
+
+@include mixins.lg {
+  h2 {
+    font-size: 32px;
+  }
+
+  .wrapper {
+    .commands-nav {
+      display: none;
+    }
+
+    command-view,
+    .card {
+      margin-left: 0;
+    }
   }
 }
